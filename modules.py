@@ -1,4 +1,4 @@
-import Function
-x=Function.sum(2,3)
+from Function import sum
+x=sum(7,3)
 print (x)
-print(Function.sum(15,16))
+print(sum(15,16))
