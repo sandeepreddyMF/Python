@@ -1,0 +1,9 @@
+import requests
+method: "GET"
+url = "http://localhost:10086/server/v1/config/mfds"
+headers = {
+    'X-Requested-With' : "mfuser",
+    'Origin': "http://localhost:10086"
+    }
+response = requests.request("GET", url, headers=headers)
+print(response.text)
